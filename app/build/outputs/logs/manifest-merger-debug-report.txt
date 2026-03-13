@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-19:12
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [com.google.android.material:material:1.11.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/3d4d7e477f0d5e993535d1a79a5024fa/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/950c15e7d0f469a298c889866a63ff0c/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
@@ -45,6 +45,7 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/matthewroberts/.gradl
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/70dbd7eec144490c42991e662f943bbe/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4011945751d460e84d01d00fc739f207/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/80485ce19fb85f528af0d0d3a37c2b56/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:2:1-27:12
 	package
 		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -53,9 +54,29 @@ MERGED from [androidx.print:print:1.0.0] /Users/matthewroberts/.gradle/caches/9.
 		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:8:22-78
 application
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:4:5-17:19
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:4:5-17:19
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:10:5-23:19
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:10:5-23:19
 MERGED from [com.google.android.material:material:1.11.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/950c15e7d0f469a298c889866a63ff0c/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
@@ -77,29 +98,29 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/matthewroberts/.grad
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:6:9-41
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:12:9-41
 	android:allowBackup
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:5:9-35
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:8:9-53
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:14:9-53
 activity#com.example.basicapp.MainActivity
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:9:9-16:20
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:15:9-22:20
 	android:exported
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:11:13-36
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:17:13-36
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:10:13-41
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:16:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:12:13-15:29
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:18:13-21:29
 action#android.intent.action.MAIN
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:13:17-69
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:13:25-66
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:14:17-77
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:14:27-74
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:20:27-74
 uses-sdk
 INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml
@@ -186,6 +207,8 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4011945751d460e84d01d00fc739f207/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/80485ce19fb85f528af0d0d3a37c2b56/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/80485ce19fb85f528af0d0d3a37c2b56/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:5:5-7:41
+MERGED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:5:5-7:41
 	android:targetSdkVersion
 		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
@@ -280,3 +303,35 @@ action#androidx.profileinstaller.action.BENCHMARK_OPERATION
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
 	android:name
 		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+supports-screens
+ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:9:5-12:40
+	android:largeScreens
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:11:9-36
+	android:normalScreens
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:12:9-37
+	android:anyDensity
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:10:9-34
+uses-feature#android.hardware.location.network
+ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:15:9-57
+uses-feature#android.hardware.location.gps
+ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:17:5-19:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:19:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:18:9-53
+uses-feature#android.hardware.telephony
+ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:20:5-22:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:22:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:21:9-50
+uses-feature#android.hardware.wifi
+ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:23:5-25:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:25:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:24:9-45
