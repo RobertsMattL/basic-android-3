@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.basicapp-mergeDebugResources-29:/values-hi/values-hi.xml",
+            "outputFile": "com.example.basicapp-mergeDebugResources-30:/values-hi/values-hi.xml",
             "map": [
                 {
                     "source": "/Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/res/values-hi/values-hi.xml",
