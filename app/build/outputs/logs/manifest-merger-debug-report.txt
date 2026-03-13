@@ -1,6 +1,7 @@
 -- Merging decision tree log ---
 manifest
 <<<<<<< HEAD
+<<<<<<< HEAD
 ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:2:1-33:12
 INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:2:1-33:12
 INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:2:1-33:12
@@ -11,13 +12,24 @@ INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-b
 INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-25:12
 INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-25:12
 >>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
+=======
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-28:12
+>>>>>>> e7c8a70ec75100ed7489aca4a06e999f7296ef0a
 MERGED from [com.google.android.material:material:1.11.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/3d4d7e477f0d5e993535d1a79a5024fa/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/950c15e7d0f469a298c889866a63ff0c/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/f93af0a5e4852de44c6c99bad50478f0/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4b4842b8753770785de130452cf259f9/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:17:1-44:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/331bccabf4e8092c8716b87f5860ac88/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-location:21.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/7d0342575129bf85bb7ac8c16aa8470f/transformed/jetified-play-services-location-21.1.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/f91020385e8c1135313d9a0777127c21/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0073e34d867328e1a124d961a1497f0d/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0e0937782feed2ed2d8b1e979e4ee1c1/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.8.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/f8bd3a25776441fb2fc51b28f64a7a05/transformed/jetified-activity-1.8.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/b08b8fefe4be190eb9e3118381b9a56e/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
@@ -52,7 +64,6 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/matthewroberts/.gradl
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/70dbd7eec144490c42991e662f943bbe/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4011945751d460e84d01d00fc739f207/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/80485ce19fb85f528af0d0d3a37c2b56/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:2:1-27:12
 	package
 		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -97,36 +108,45 @@ ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss
 INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:14:5-31:19
 =======
 		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:11-69
-uses-permission#android.permission.INTERNET
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:4:5-67
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:4:22-64
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:5:5-79
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:5:22-76
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:6:5-81
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:6:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:7:5-79
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:4:5-79
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:7:22-76
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:4:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:8:5-81
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:5:5-81
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:8:22-78
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:5:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:6:22-64
 application
+<<<<<<< HEAD
 ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:10:5-23:19
 INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:10:5-23:19
 >>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
+=======
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:8:5-26:19
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:8:5-26:19
+>>>>>>> e7c8a70ec75100ed7489aca4a06e999f7296ef0a
 MERGED from [com.google.android.material:material:1.11.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/950c15e7d0f469a298c889866a63ff0c/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/950c15e7d0f469a298c889866a63ff0c/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-location:21.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/7d0342575129bf85bb7ac8c16aa8470f/transformed/jetified-play-services-location-21.1.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:21.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/7d0342575129bf85bb7ac8c16aa8470f/transformed/jetified-play-services-location-21.1.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/f91020385e8c1135313d9a0777127c21/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/f91020385e8c1135313d9a0777127c21/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0073e34d867328e1a124d961a1497f0d/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0073e34d867328e1a124d961a1497f0d/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/6f6e715aa9bf2ccb52d7421676d2e2bb/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
@@ -142,6 +162,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/matthewroberts/.grad
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
+<<<<<<< HEAD
 <<<<<<< HEAD
 		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:17:9-35
 	android:label
@@ -179,26 +200,42 @@ ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss
 	android:label
 		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:12:9-41
 	android:allowBackup
+=======
+>>>>>>> e7c8a70ec75100ed7489aca4a06e999f7296ef0a
 		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:11:9-35
+	android:label
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:10:9-41
+	android:allowBackup
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:14:9-53
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:12:9-53
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:14:9-16:48
+	android:value
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:16:13-46
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:15:13-58
 activity#com.example.basicapp.MainActivity
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:15:9-22:20
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:18:9-25:20
 	android:exported
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:17:13-36
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:20:13-36
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:16:13-41
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:18:13-21:29
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:21:13-24:29
 action#android.intent.action.MAIN
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:23:17-77
 	android:name
+<<<<<<< HEAD
 		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:20:27-74
 >>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
+=======
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:23:27-74
+>>>>>>> e7c8a70ec75100ed7489aca4a06e999f7296ef0a
 uses-sdk
 INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml
@@ -215,8 +252,18 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/matthewroberts/.g
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4b4842b8753770785de130452cf259f9/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/331bccabf4e8092c8716b87f5860ac88/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/331bccabf4e8092c8716b87f5860ac88/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-location:21.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/7d0342575129bf85bb7ac8c16aa8470f/transformed/jetified-play-services-location-21.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/7d0342575129bf85bb7ac8c16aa8470f/transformed/jetified-play-services-location-21.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/f91020385e8c1135313d9a0777127c21/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/f91020385e8c1135313d9a0777127c21/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0073e34d867328e1a124d961a1497f0d/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0073e34d867328e1a124d961a1497f0d/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0e0937782feed2ed2d8b1e979e4ee1c1/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0e0937782feed2ed2d8b1e979e4ee1c1/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.8.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/f8bd3a25776441fb2fc51b28f64a7a05/transformed/jetified-activity-1.8.0/AndroidManifest.xml:20:5-44
@@ -285,8 +332,6 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4011945751d460e84d01d00fc739f207/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/80485ce19fb85f528af0d0d3a37c2b56/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/80485ce19fb85f528af0d0d3a37c2b56/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:5:5-7:41
-MERGED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:5:5-7:41
 	android:targetSdkVersion
 		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
@@ -313,6 +358,42 @@ ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9
 		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
 	android:name
 		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
+queries
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:30:5-34:15
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0073e34d867328e1a124d961a1497f0d/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0073e34d867328e1a124d961a1497f0d/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0073e34d867328e1a124d961a1497f0d/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
@@ -381,35 +462,3 @@ action#androidx.profileinstaller.action.BENCHMARK_OPERATION
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
 	android:name
 		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-supports-screens
-ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:9:5-12:40
-	android:largeScreens
-		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:11:9-36
-	android:normalScreens
-		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:12:9-37
-	android:anyDensity
-		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:10:9-34
-uses-feature#android.hardware.location.network
-ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:14:5-16:36
-	android:required
-		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:16:9-33
-	android:name
-		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:15:9-57
-uses-feature#android.hardware.location.gps
-ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:17:5-19:36
-	android:required
-		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:19:9-33
-	android:name
-		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:18:9-53
-uses-feature#android.hardware.telephony
-ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:20:5-22:36
-	android:required
-		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:22:9-33
-	android:name
-		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:21:9-50
-uses-feature#android.hardware.wifi
-ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:23:5-25:36
-	android:required
-		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:25:9-33
-	android:name
-		ADDED from [org.osmdroid:osmdroid-android:6.1.18] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4207e46fd0ad00fd425e0528cbb08f2e/transformed/jetified-osmdroid-android-6.1.18/AndroidManifest.xml:24:9-45

@@ -1,6 +1,7 @@
 [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "merged": "com.example.basicapp-debug-31:/layout_activity_main.xml.flat",
         "source": "com.example.basicapp-main-33:/layout/activity_main.xml"
     },
@@ -15,5 +16,13 @@
         "merged": "com.example.basicapp-debug-32:/layout_activity_main.xml.flat",
         "source": "com.example.basicapp-main-34:/layout/activity_main.xml"
 >>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
+=======
+        "merged": "com.example.basicapp-debug-34:/layout_debug_panel.xml.flat",
+        "source": "com.example.basicapp-main-36:/layout/debug_panel.xml"
+    },
+    {
+        "merged": "com.example.basicapp-debug-34:/layout_activity_main.xml.flat",
+        "source": "com.example.basicapp-main-36:/layout/activity_main.xml"
+>>>>>>> e7c8a70ec75100ed7489aca4a06e999f7296ef0a
     }
 ]
