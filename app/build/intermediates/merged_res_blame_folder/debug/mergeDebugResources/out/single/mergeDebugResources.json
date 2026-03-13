@@ -2,5 +2,13 @@
     {
         "merged": "com.example.basicapp-debug-31:/layout_activity_main.xml.flat",
         "source": "com.example.basicapp-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.basicapp-debug-31:/layout_activity_ble_scanner.xml.flat",
+        "source": "com.example.basicapp-main-33:/layout/activity_ble_scanner.xml"
+    },
+    {
+        "merged": "com.example.basicapp-debug-31:/menu_main_menu.xml.flat",
+        "source": "com.example.basicapp-main-33:/menu/main_menu.xml"
     }
 ]

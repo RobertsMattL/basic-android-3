@@ -25,10 +25,10 @@ com.example.basicapp-coordinatorlayout-1.1.0-23 /Users/matthewroberts/.gradle/ca
 com.example.basicapp-material-1.11.0-24 /Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/res
 com.example.basicapp-jetified-activity-1.8.0-25 /Users/matthewroberts/.gradle/caches/9.4.0/transforms/f8bd3a25776441fb2fc51b28f64a7a05/transformed/jetified-activity-1.8.0/res
 com.example.basicapp-appcompat-1.6.1-26 /Users/matthewroberts/.gradle/caches/9.4.0/transforms/f93af0a5e4852de44c6c99bad50478f0/transformed/appcompat-1.6.1/res
-com.example.basicapp-pngs-27 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/build/generated/res/pngs/debug
-com.example.basicapp-resValues-28 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/build/generated/res/resValues/debug
-com.example.basicapp-packageDebugResources-29 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.example.basicapp-packageDebugResources-30 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.example.basicapp-debug-31 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/build/intermediates/merged_res/debug/mergeDebugResources
-com.example.basicapp-debug-32 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/debug/res
-com.example.basicapp-main-33 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/res
+com.example.basicapp-pngs-27 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/build/generated/res/pngs/debug
+com.example.basicapp-resValues-28 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/build/generated/res/resValues/debug
+com.example.basicapp-packageDebugResources-29 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.example.basicapp-packageDebugResources-30 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.example.basicapp-debug-31 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.example.basicapp-debug-32 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/debug/res
+com.example.basicapp-main-33 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/res

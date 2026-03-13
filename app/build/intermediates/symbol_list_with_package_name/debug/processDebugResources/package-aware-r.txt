@@ -3042,6 +3042,7 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
+id action_ble_scanner
 id action_container
 id action_context_bar
 id action_divider
@@ -3117,6 +3118,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id deviceListView
 id dialog_button
 id dimensions
 id direct
@@ -3369,6 +3371,7 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id statusTextView
 id stop
 id stretch
 id submenuarrow
@@ -3550,6 +3553,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_ble_scanner
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3630,6 +3634,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu main_menu
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
