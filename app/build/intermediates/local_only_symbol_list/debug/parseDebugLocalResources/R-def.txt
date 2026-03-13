@@ -1,6 +1,5 @@
 R_DEF: Internal format may change without notice
 local
-<<<<<<< HEAD
 id accelXText
 id accelYText
 id accelZText
@@ -9,9 +8,6 @@ id elevationText
 id latitudeText
 id longitudeText
 id map
-=======
-id mapView
->>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
 layout activity_main
 layout debug_panel
 string app_name

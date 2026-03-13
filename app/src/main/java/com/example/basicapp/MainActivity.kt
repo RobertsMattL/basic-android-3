@@ -10,7 +10,6 @@ import android.location.Location
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-<<<<<<< HEAD
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.android.gms.location.FusedLocationProviderClient
@@ -45,25 +44,10 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, SensorEventListene
         const val LOCATION_PERMISSION_REQUEST_CODE = 1
     }
 
-=======
-import org.osmdroid.config.Configuration
-import org.osmdroid.tileprovider.tilesource.TileSourceFactory
-import org.osmdroid.util.GeoPoint
-import org.osmdroid.views.MapView
-
-class MainActivity : AppCompatActivity() {
-    private lateinit var mapView: MapView
-
->>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // Configure OSMDroid
-        Configuration.getInstance().load(this, getPreferences(MODE_PRIVATE))
-
         setContentView(R.layout.activity_main)
 
-<<<<<<< HEAD
         // Initialize debug panel views
         latitudeText = findViewById(R.id.latitudeText)
         longitudeText = findViewById(R.id.longitudeText)
@@ -168,37 +152,20 @@ class MainActivity : AppCompatActivity() {
         } else {
             elevationText.text = "Elevation: N/A"
         }
-=======
-        // Initialize map
-        mapView = findViewById(R.id.mapView)
-        mapView.setTileSource(TileSourceFactory.USGS_SAT)
-        mapView.setMultiTouchControls(true)
-
-        // Set default position and zoom
-        val mapController = mapView.controller
-        mapController.setZoom(15.0)
-        val startPoint = GeoPoint(37.7749, -122.4194) // San Francisco
-        mapController.setCenter(startPoint)
->>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
     }
 
     override fun onResume() {
         super.onResume()
-<<<<<<< HEAD
         accelerometer?.also { accel ->
             sensorManager.registerListener(this, accel, SensorManager.SENSOR_DELAY_UI)
         }
         if (hasLocationPermission()) {
             startLocationUpdates()
         }
-=======
-        mapView.onResume()
->>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
     }
 
     override fun onPause() {
         super.onPause()
-<<<<<<< HEAD
         sensorManager.unregisterListener(this)
         fusedLocationClient.removeLocationUpdates(locationCallback)
     }
@@ -231,8 +198,5 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-=======
-        mapView.onPause()
->>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
     }
 }

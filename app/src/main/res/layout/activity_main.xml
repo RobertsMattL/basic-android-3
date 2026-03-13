@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<<<<<<< HEAD
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
@@ -19,11 +18,3 @@
         android:layout_margin="16dp" />
 
 </FrameLayout>
-=======
-    <org.osmdroid.views.MapView
-        android:id="@+id/mapView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-</LinearLayout>
->>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5

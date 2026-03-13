@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "com.example.basicapp-mergeDebugResources-32:/values-kk/values-kk.xml",
-=======
-            "outputFile": "com.example.basicapp-mergeDebugResources-30:/values-kk/values-kk.xml",
->>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
             "map": [
                 {
                     "source": "/Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/res/values-kk/values.xml",
