@@ -1,6 +1,10 @@
 [
     {
-        "merged": "com.example.basicapp-debug-31:/layout_activity_main.xml.flat",
-        "source": "com.example.basicapp-main-33:/layout/activity_main.xml"
+        "merged": "com.example.basicapp-debug-34:/layout_debug_panel.xml.flat",
+        "source": "com.example.basicapp-main-36:/layout/debug_panel.xml"
+    },
+    {
+        "merged": "com.example.basicapp-debug-34:/layout_activity_main.xml.flat",
+        "source": "com.example.basicapp-main-36:/layout/activity_main.xml"
     }
 ]

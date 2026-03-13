@@ -8,114 +8,174 @@
 8        android:minSdkVersion="24"
 9        android:targetSdkVersion="34" />
 10
-11    <permission
-11-->[androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.basicapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:4:5-79
+11-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:4:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:5:5-81
+12-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:5:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:6:5-67
+13-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:6:22-64
 14
-15    <uses-permission android:name="com.example.basicapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
-16
-17    <application
-17-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:4:5-17:19
-18        android:allowBackup="true"
-18-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:5:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
-20        android:debuggable="true"
-21        android:extractNativeLibs="false"
-22        android:label="@string/app_name"
-22-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:6:9-41
-23        android:supportsRtl="true"
-23-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:7:9-35
-24        android:theme="@style/Theme.AppCompat.Light" >
-24-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:8:9-53
-25        <activity
-25-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:9:9-16:20
-26            android:name="com.example.basicapp.MainActivity"
-26-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:10:13-41
-27            android:exported="true" >
-27-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:11:13-36
-28            <intent-filter>
-28-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:12:13-15:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:13:17-69
-29-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:13:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:14:17-77
-31-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:14:27-74
-32            </intent-filter>
-33        </activity>
-34
-35        <provider
-35-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-36            android:name="androidx.startup.InitializationProvider"
-36-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-37            android:authorities="com.example.basicapp.androidx-startup"
-37-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-38            android:exported="false" >
-38-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-39            <meta-data
-39-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-40                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-40-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-41                android:value="androidx.startup" />
-41-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-42            <meta-data
-42-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/6f6e715aa9bf2ccb52d7421676d2e2bb/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-43                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-43-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/6f6e715aa9bf2ccb52d7421676d2e2bb/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
-44                android:value="androidx.startup" />
-44-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/6f6e715aa9bf2ccb52d7421676d2e2bb/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
-45            <meta-data
-45-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-46                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-46-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-47                android:value="androidx.startup" />
-47-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-48        </provider>
-49
-50        <receiver
-50-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-51            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-51-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-52            android:directBootAware="false"
-52-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-53            android:enabled="true"
-53-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-54            android:exported="true"
-54-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-55            android:permission="android.permission.DUMP" >
-55-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-56            <intent-filter>
-56-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-57                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-57-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-57-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-58            </intent-filter>
-59            <intent-filter>
-59-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-60                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-60-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-60-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-61            </intent-filter>
-62            <intent-filter>
-62-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-63                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-63-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-63-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-64            </intent-filter>
-65            <intent-filter>
-65-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-66                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-67            </intent-filter>
-68        </receiver>
-69    </application>
-70
-71</manifest>
+15    <!-- Include required permissions for Google Maps API to run. -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:5-79
+16-->[com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:22-76
+17
+18    <uses-feature
+18-->[com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
+19        android:glEsVersion="0x00020000"
+19-->[com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
+20        android:required="true" />
+20-->[com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
+21
+22    <queries>
+22-->[com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:30:5-34:15
+23
+24        <!-- Needs to be explicitly declared on Android R+ -->
+25        <package android:name="com.google.android.apps.maps" />
+25-->[com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:9-64
+25-->[com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:18-61
+26    </queries>
+27
+28    <permission
+28-->[androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+29        android:name="com.example.basicapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.example.basicapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+33
+34    <application
+34-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:8:5-26:19
+35        android:allowBackup="true"
+35-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:9:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+37        android:debuggable="true"
+38        android:extractNativeLibs="false"
+39        android:label="@string/app_name"
+39-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:10:9-41
+40        android:supportsRtl="true"
+40-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:11:9-35
+41        android:theme="@style/Theme.AppCompat.Light" >
+41-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:12:9-53
+42        <meta-data
+42-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:14:9-16:48
+43            android:name="com.google.android.geo.API_KEY"
+43-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:15:13-58
+44            android:value="YOUR_API_KEY_HERE" />
+44-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:16:13-46
+45
+46        <activity
+46-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:18:9-25:20
+47            android:name="com.example.basicapp.MainActivity"
+47-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:19:13-41
+48            android:exported="true" >
+48-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:20:13-36
+49            <intent-filter>
+49-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:21:13-24:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:22:17-69
+50-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:22:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:23:17-77
+52-->/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a2/app/src/main/AndroidManifest.xml:23:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <provider
+56-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+57            android:name="androidx.startup.InitializationProvider"
+57-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+58            android:authorities="com.example.basicapp.androidx-startup"
+58-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+59            android:exported="false" >
+59-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+60            <meta-data
+60-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+61                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+61-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+62                android:value="androidx.startup" />
+62-->[androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+63            <meta-data
+63-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/6f6e715aa9bf2ccb52d7421676d2e2bb/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+64-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/6f6e715aa9bf2ccb52d7421676d2e2bb/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+65                android:value="androidx.startup" />
+65-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/6f6e715aa9bf2ccb52d7421676d2e2bb/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+68                android:value="androidx.startup" />
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+69        </provider> <!-- Needs to be explicitly declared on P+ -->
+70        <uses-library
+70-->[com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
+71            android:name="org.apache.http.legacy"
+71-->[com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
+72            android:required="false" />
+72-->[com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
+73
+74        <activity
+74-->[com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+75            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+75-->[com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+76            android:exported="false"
+76-->[com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+77            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+77-->[com.google.android.gms:play-services-base:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8573641ec18e118c7edfa3862922e688/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+78
+79        <meta-data
+79-->[com.google.android.gms:play-services-basement:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0073e34d867328e1a124d961a1497f0d/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+80            android:name="com.google.android.gms.version"
+80-->[com.google.android.gms:play-services-basement:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0073e34d867328e1a124d961a1497f0d/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+81            android:value="@integer/google_play_services_version" />
+81-->[com.google.android.gms:play-services-basement:18.1.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/0073e34d867328e1a124d961a1497f0d/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+82
+83        <receiver
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+84            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+85            android:directBootAware="false"
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+86            android:enabled="true"
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+87            android:exported="true"
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+88            android:permission="android.permission.DUMP" >
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+90                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+91            </intent-filter>
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+93                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+94            </intent-filter>
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+96                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+97            </intent-filter>
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+99                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/00bfc72cde4351f83f9305bdc5cab7c1/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+100            </intent-filter>
+101        </receiver>
+102    </application>
+103
+104</manifest>
