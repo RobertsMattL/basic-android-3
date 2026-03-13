@@ -1,23 +1,9 @@
 -- Merging decision tree log ---
 manifest
-<<<<<<< HEAD
-<<<<<<< HEAD
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:2:1-33:12
-=======
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-25:12
->>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
-=======
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-28:12
->>>>>>> e7c8a70ec75100ed7489aca4a06e999f7296ef0a
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:1-43:12
 MERGED from [com.google.android.material:material:1.11.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/3d4d7e477f0d5e993535d1a79a5024fa/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/950c15e7d0f469a298c889866a63ff0c/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
@@ -65,72 +51,62 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/matthewroberts/.gr
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/4011945751d460e84d01d00fc739f207/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/80485ce19fb85f528af0d0d3a37c2b56/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml
 	xmlns:android
-<<<<<<< HEAD
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:2:11-69
-uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:5:5-68
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:5:22-65
-uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:6:5-74
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:6:22-71
-uses-permission#android.permission.BLUETOOTH_SCAN
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:7:5-73
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:7:22-70
-uses-permission#android.permission.BLUETOOTH_CONNECT
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:8:5-76
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:8:22-73
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:9:5-79
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:9:22-76
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:10:5-81
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:10:22-78
-uses-feature#android.hardware.bluetooth_le
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:12:5-90
-	android:required
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:12:64-87
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:12:19-63
-application
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:14:5-31:19
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:14:5-31:19
-=======
 		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:5:5-68
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:5:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:6:5-74
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:6:22-71
+uses-permission#android.permission.BLUETOOTH_SCAN
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:7:5-73
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:7:22-70
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:8:22-73
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:4:5-79
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:4:22-76
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:5:5-81
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:5:22-78
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:10:22-78
+uses-feature#android.hardware.bluetooth_le
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:12:5-90
+	android:required
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:12:64-87
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:12:19-63
 uses-permission#android.permission.INTERNET
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:6:5-67
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:15:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:6:22-64
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:15:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:16:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:16:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:17:22-78
 application
-<<<<<<< HEAD
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:10:5-23:19
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:10:5-23:19
->>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
-=======
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:8:5-26:19
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:8:5-26:19
->>>>>>> e7c8a70ec75100ed7489aca4a06e999f7296ef0a
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:19:5-41:19
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:19:5-41:19
 MERGED from [com.google.android.material:material:1.11.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/950c15e7d0f469a298c889866a63ff0c/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
@@ -158,88 +134,51 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/matthewrob
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8a83fcfa0f770cf25c0b15637c7f1737/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/8a83fcfa0f770cf25c0b15637c7f1737/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
-		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/9811eada5807939bdc78136461d8d3fa/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-<<<<<<< HEAD
-<<<<<<< HEAD
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:16:9-41
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:21:9-41
 	android:allowBackup
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:20:9-35
 	android:theme
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:18:9-53
-activity#com.example.basicapp.MainActivity
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:19:9-26:20
-	android:exported
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:21:13-36
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:20:13-41
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:22:13-25:29
-action#android.intent.action.MAIN
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:23:17-69
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:23:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:24:17-77
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:24:27-74
-activity#com.example.basicapp.BleScannerActivity
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:27:9-30:58
-	android:parentActivityName
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:30:13-55
-	android:label
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:29:13-40
-	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml:28:13-47
-=======
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:13:9-35
-	android:label
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:12:9-41
-	android:allowBackup
-=======
->>>>>>> e7c8a70ec75100ed7489aca4a06e999f7296ef0a
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:11:9-35
-	android:label
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:10:9-41
-	android:allowBackup
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:9:9-35
-	android:theme
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:12:9-53
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:23:9-53
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:14:9-16:48
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:25:9-27:48
 	android:value
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:16:13-46
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:27:13-46
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:15:13-58
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:26:13-58
 activity#com.example.basicapp.MainActivity
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:18:9-25:20
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:29:9-36:20
 	android:exported
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:20:13-36
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:19:13-41
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:30:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:21:13-24:29
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:32:13-35:29
 action#android.intent.action.MAIN
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:23:17-77
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:34:17-77
 	android:name
-<<<<<<< HEAD
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:20:27-74
->>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
-=======
-		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:23:27-74
->>>>>>> e7c8a70ec75100ed7489aca4a06e999f7296ef0a
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:34:27-74
+activity#com.example.basicapp.BleScannerActivity
+ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:37:9-40:58
+	android:parentActivityName
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:40:13-55
+	android:label
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:39:13-40
+	android:name
+		ADDED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:38:13-47
 uses-sdk
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml
-INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml
+INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.11.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.11.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/3d4d7e477f0d5e993535d1a79a5024fa/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
@@ -333,9 +272,9 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.print:print:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/80485ce19fb85f528af0d0d3a37c2b56/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/80485ce19fb85f528af0d0d3a37c2b56/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a3/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/6f6e715aa9bf2ccb52d7421676d2e2bb/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:24:9-32:20
@@ -358,10 +297,6 @@ ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9
 		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
 	android:name
 		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/865469c2bfa619857c2fe2e502c53764/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:5-79
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:23:22-76
 uses-feature#0x00020000
 ADDED from [com.google.android.gms:play-services-maps:18.2.0] /Users/matthewroberts/.gradle/caches/9.4.0/transforms/d0fd2258079d47a624cb68377c77b6f3/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion

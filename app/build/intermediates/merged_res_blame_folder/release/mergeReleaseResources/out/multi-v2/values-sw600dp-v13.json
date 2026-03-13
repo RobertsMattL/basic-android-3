@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.basicapp-mergeReleaseResources-29:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "com.example.basicapp-mergeReleaseResources-32:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/matthewroberts/.gradle/caches/9.4.0/transforms/f93af0a5e4852de44c6c99bad50478f0/transformed/appcompat-1.6.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",

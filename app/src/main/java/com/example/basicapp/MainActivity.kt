@@ -1,12 +1,8 @@
 package com.example.basicapp
 
-<<<<<<< HEAD
-import android.content.Intent
-import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-=======
 import android.Manifest
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.hardware.Sensor
 import android.hardware.SensorEvent
@@ -14,8 +10,9 @@ import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.location.Location
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.TextView
->>>>>>> e7c8a70ec75100ed7489aca4a06e999f7296ef0a
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -118,12 +115,14 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, SensorEventListene
         }
     }
 
+    @SuppressLint("MissingPermission")
     private fun enableMyLocation() {
         if (hasLocationPermission()) {
             map.isMyLocationEnabled = true
         }
     }
 
+    @SuppressLint("MissingPermission")
     private fun startLocationUpdates() {
         if (!hasLocationPermission()) return
 

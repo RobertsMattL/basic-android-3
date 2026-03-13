@@ -10,7 +10,7 @@
     <map id="UnusedResources">
         <entry
             name="model"
-            string="layout[activity_main(U)],string[app_name(U)],style[Theme_AppCompat_Light(R)];;;;"/>
+            string="id[statusTextView(U),deviceListView(U),map(U),debugPanel(D),latitudeText(U),longitudeText(U),elevationText(U),accelXText(U),accelYText(U),accelZText(U),action_ble_scanner(U)],layout[activity_ble_scanner(U),activity_main(U),debug_panel(U)],menu[main_menu(U)],string[app_name(U)],style[Theme_AppCompat_Light(R)];c^d;;;"/>
     </map>
 
 </incidents>

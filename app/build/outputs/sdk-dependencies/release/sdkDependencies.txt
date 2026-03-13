@@ -730,6 +730,66 @@ library {
   repo_index {
   }
 }
+library {
+  maven_library {
+    groupId: "com.google.android.gms"
+    artifactId: "play-services-maps"
+    version: "18.2.0"
+  }
+  digests {
+    sha256: "D\365\006UW\212!\305y\341\273-\254\256\304\305E\354M\370\023\223\326\375r6\326d&\200V\251"
+  }
+  repo_index {
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.android.gms"
+    artifactId: "play-services-base"
+    version: "18.1.0"
+  }
+  digests {
+    sha256: "N\312V\316\354\3242Z7l\330C\257V7~#v\316(M\fo\005\245\320\250/L\033\370\315"
+  }
+  repo_index {
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.android.gms"
+    artifactId: "play-services-basement"
+    version: "18.1.0"
+  }
+  digests {
+    sha256: "\003\272\025\363\206\317&\v\336r\374@\020\373\211\250 \304}Q\316c\274\t)~\253\346\314\340\233\335"
+  }
+  repo_index {
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.android.gms"
+    artifactId: "play-services-tasks"
+    version: "18.0.2"
+  }
+  digests {
+    sha256: "\003F\\\3656\200\332#\323\324\243\231\\\003)\267\367;!\0358y\036\3136\345\221\376\273\211fd"
+  }
+  repo_index {
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.android.gms"
+    artifactId: "play-services-location"
+    version: "21.1.0"
+  }
+  digests {
+    sha256: "n\374\257\327\317P{9L\'jW\326\315\311\030g\315m\vZ\376\222\274\263*e\210\223*<\301"
+  }
+  repo_index {
+  }
+}
 library_dependencies {
   library_dep_index: 1
   library_dep_index: 2
@@ -1154,12 +1214,46 @@ library_dependencies {
   library_dep_index: 8
   library_dep_index: 10
 }
+library_dependencies {
+  library_index: 61
+  library_dep_index: 42
+  library_dep_index: 62
+  library_dep_index: 63
+  library_dep_index: 64
+}
+library_dependencies {
+  library_index: 62
+  library_dep_index: 10
+  library_dep_index: 8
+  library_dep_index: 42
+  library_dep_index: 63
+  library_dep_index: 64
+}
+library_dependencies {
+  library_index: 63
+  library_dep_index: 10
+  library_dep_index: 8
+  library_dep_index: 42
+}
+library_dependencies {
+  library_index: 64
+  library_dep_index: 63
+}
+library_dependencies {
+  library_index: 65
+  library_dep_index: 62
+  library_dep_index: 63
+  library_dep_index: 64
+  library_dep_index: 0
+}
 module_dependencies {
   module_name: "base"
   dependency_index: 0
   dependency_index: 5
   dependency_index: 32
   dependency_index: 46
+  dependency_index: 61
+  dependency_index: 65
 }
 repositories {
   maven_repo {

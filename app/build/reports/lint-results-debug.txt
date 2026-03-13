@@ -1,3 +1,37 @@
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:17: Warning: WRITE_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to write to shared storage, use the MediaStore.createWriteRequest intent. [ScopedStorage]
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ScopedStorage":
+   Scoped storage is enforced on Android 10+ (or Android 11+ if using
+   requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
+   no longer provide write access to all files; it will provide the equivalent
+   of READ_EXTERNAL_STORAGE instead.
+
+   As of Android 13, if you need to query or interact with MediaStore or media
+   files on the shared storage, you should be using instead one or more new
+   storage permissions:
+   * android.permission.READ_MEDIA_IMAGES
+   * android.permission.READ_MEDIA_VIDEO
+   * android.permission.READ_MEDIA_AUDIO
+
+   and then add maxSdkVersion="33" to the older permission. See the developer
+   guide for how to do this:
+   https://developer.android.com/about/versions/13/behavior-changes-13#granula
+   r-media-permissions
+
+   The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
+   it is rarely necessary and most apps on Google Play are not allowed to use
+   it. Most apps should instead migrate to use scoped storage. To modify or
+   delete files, apps should request write access from the user as described
+   at https://goo.gle/android-mediastore-createwriterequest.
+
+   To learn more, read these resources: Play policy:
+   https://goo.gle/policy-storage-help Allowable use cases:
+   https://goo.gle/policy-storage-usecases
+
+   https://goo.gle/android-storage-usecases
+
 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/build.gradle:13: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
         targetSdk 34
         ~~~~~~~~~~~~
@@ -20,6 +54,24 @@
 
    https://developer.android.com/distribute/best-practices/develop/target-sdk.html
 
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/res/layout/activity_main.xml:6: Warning: Replace the <fragment> tag with FragmentContainerView. [FragmentTagUsage from androidx.fragment.lint.fragment]
+    <fragment
+     ~~~~~~~~
+
+   Explanation for issues of type "FragmentTagUsage":
+   FragmentContainerView replaces the <fragment> tag as the preferred         
+          way of adding fragments via XML. Unlike the <fragment> tag,
+   FragmentContainerView                 uses a normal FragmentTransaction
+   under the hood to add the initial fragment,                 allowing
+   further FragmentTransaction operations on the FragmentContainerView        
+           and providing a consistent timing for lifecycle events.
+
+   https://developer.android.com/reference/androidx/fragment/app/FragmentContainerView.html
+
+   Vendor: Android Open Source Project (androidx.fragment.lint.fragment)
+   Identifier: androidx.fragment.lint.fragment
+   Feedback: https://issuetracker.google.com/issues/new?component=192731
+
 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/build.gradle:34: Warning: A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.18.0 [GradleDependency]
     implementation 'androidx.core:core-ktx:1.12.0'
                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,6 +81,12 @@
 /Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/build.gradle:36: Warning: A newer version of com.google.android.material:material than 1.11.0 is available: 1.13.0 [GradleDependency]
     implementation 'com.google.android.material:material:1.11.0'
                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/build.gradle:37: Warning: A newer version of com.google.android.gms:play-services-maps than 18.2.0 is available: 20.0.0 [GradleDependency]
+    implementation 'com.google.android.gms:play-services-maps:18.2.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/build.gradle:38: Warning: A newer version of com.google.android.gms:play-services-location than 21.1.0 is available: 21.3.0 [GradleDependency]
+    implementation 'com.google.android.gms:play-services-location:21.1.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    Explanation for issues of type "GradleDependency":
    This detector looks for usages of libraries where the version you are using
@@ -37,7 +95,19 @@
    However, you may simply not be aware that a more recent version is
    available, and that is what this lint check helps find.
 
-/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:4: Warning: Should explicitly set android:icon, there is no default [MissingApplicationIcon]
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/res/layout/activity_main.xml:2: Warning: This <FrameLayout> can be replaced with a <merge> tag [MergeRootFrame]
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+
+   Explanation for issues of type "MergeRootFrame":
+   If a <FrameLayout> is the root of a layout and does not provide background
+   or padding etc, it can often be replaced with a <merge> tag which is
+   slightly more efficient. Note that this depends on context, so make sure
+   you understand how the <merge> tag works before proceeding.
+
+   https://android-developers.googleblog.com/2009/03/android-layout-tricks-3-optimize-by.html
+
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/AndroidManifest.xml:19: Warning: Should explicitly set android:icon, there is no default [MissingApplicationIcon]
     <application
      ~~~~~~~~~~~
 
@@ -48,4 +118,108 @@
 
    https://developer.android.com/studio/publish/preparing#publishing-configure
 
-0 errors, 5 warnings
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/BleScannerActivity.kt:127: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        statusTextView.text = "Scanning for BLE devices..."
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/BleScannerActivity.kt:143: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            statusTextView.text = "Scan complete. Found ${deviceList.size} devices."
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/BleScannerActivity.kt:143: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusTextView.text = "Scan complete. Found ${deviceList.size} devices."
+                                   ~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/BleScannerActivity.kt:143: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusTextView.text = "Scan complete. Found ${deviceList.size} devices."
+                                                                          ~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/BleScannerActivity.kt:168: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                            statusTextView.text = "Found ${deviceList.size} devices..."
+                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/BleScannerActivity.kt:168: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                            statusTextView.text = "Found ${deviceList.size} devices..."
+                                                   ~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/BleScannerActivity.kt:168: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                            statusTextView.text = "Found ${deviceList.size} devices..."
+                                                                           ~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/BleScannerActivity.kt:182: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                statusTextView.text = "Scan failed with error code: $errorCode"
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/BleScannerActivity.kt:182: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                statusTextView.text = "Scan failed with error code: $errorCode"
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/MainActivity.kt:153: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        latitudeText.text = "Lat: %.6f".format(location.latitude)
+                             ~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/MainActivity.kt:154: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        longitudeText.text = "Lng: %.6f".format(location.longitude)
+                              ~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/MainActivity.kt:157: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            elevationText.text = "Elevation: %.1f m".format(location.altitude)
+                                  ~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/MainActivity.kt:159: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            elevationText.text = "Elevation: N/A"
+                                  ~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/MainActivity.kt:182: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                accelXText.text = "Accel X: %.2f m/s²".format(it.values[0])
+                                   ~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/MainActivity.kt:183: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                accelYText.text = "Accel Y: %.2f m/s²".format(it.values[1])
+                                   ~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/java/com/example/basicapp/MainActivity.kt:184: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                accelZText.text = "Accel Z: %.2f m/s²".format(it.values[2])
+                                   ~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/res/layout/activity_ble_scanner.xml:12: Warning: Hardcoded string "Scanning for BLE devices...", should use @string resource [HardcodedText]
+        android:text="Scanning for BLE devices..."
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/res/layout/debug_panel.xml:20: Warning: Hardcoded string "Debug Info", should use @string resource [HardcodedText]
+            android:text="Debug Info"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/res/layout/debug_panel.xml:30: Warning: Hardcoded string "Lat: --", should use @string resource [HardcodedText]
+            android:text="Lat: --"
+            ~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/res/layout/debug_panel.xml:39: Warning: Hardcoded string "Lng: --", should use @string resource [HardcodedText]
+            android:text="Lng: --"
+            ~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/res/layout/debug_panel.xml:48: Warning: Hardcoded string "Elevation: --", should use @string resource [HardcodedText]
+            android:text="Elevation: --"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/res/layout/debug_panel.xml:64: Warning: Hardcoded string "Accel X: --", should use @string resource [HardcodedText]
+            android:text="Accel X: --"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/res/layout/debug_panel.xml:73: Warning: Hardcoded string "Accel Y: --", should use @string resource [HardcodedText]
+            android:text="Accel Y: --"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/res/layout/debug_panel.xml:82: Warning: Hardcoded string "Accel Z: --", should use @string resource [HardcodedText]
+            android:text="Accel Z: --"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/matthewroberts/Library/Application Support/parallelagents-boss-node/repos/Loom2/a1/app/src/main/res/menu/main_menu.xml:6: Warning: Hardcoded string "BLE Scanner", should use @string resource [HardcodedText]
+        android:title="BLE Scanner"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 35 warnings

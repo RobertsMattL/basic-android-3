@@ -1,4 +1,18 @@
 R_DEF: Internal format may change without notice
 local
+id accelXText
+id accelYText
+id accelZText
+id action_ble_scanner
+id debugPanel
+id deviceListView
+id elevationText
+id latitudeText
+id longitudeText
+id map
+id statusTextView
+layout activity_ble_scanner
 layout activity_main
+layout debug_panel
+menu main_menu
 string app_name

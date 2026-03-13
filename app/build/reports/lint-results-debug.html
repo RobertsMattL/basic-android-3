@@ -177,18 +177,23 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 5 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 35 warnings</span>
       <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Fri Mar 13 09:22:01 PDT 2026 by AGP (8.7.3)</nav>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Fri Mar 13 14:34:51 PDT 2026 by AGP (8.7.3)</nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Issue Types</span>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="#overview"><i class="material-icons">dashboard</i>Overview</a>
+      <a class="mdl-navigation__link" href="#ScopedStorage"><i class="material-icons warning-icon">warning</i>Affected by scoped storage (1)</a>
       <a class="mdl-navigation__link" href="#OldTargetApi"><i class="material-icons warning-icon">warning</i>Target SDK attribute is not targeting latest version (1)</a>
-      <a class="mdl-navigation__link" href="#GradleDependency"><i class="material-icons warning-icon">warning</i>Obsolete Gradle Dependency (3)</a>
+      <a class="mdl-navigation__link" href="#FragmentTagUsage"><i class="material-icons warning-icon">warning</i>Use FragmentContainerView instead of the &lt;fragment> tag (1)</a>
+      <a class="mdl-navigation__link" href="#GradleDependency"><i class="material-icons warning-icon">warning</i>Obsolete Gradle Dependency (5)</a>
+      <a class="mdl-navigation__link" href="#MergeRootFrame"><i class="material-icons warning-icon">warning</i>FrameLayout can be replaced with <code>&lt;merge></code> tag (1)</a>
       <a class="mdl-navigation__link" href="#MissingApplicationIcon"><i class="material-icons warning-icon">warning</i>Missing application icon (1)</a>
+      <a class="mdl-navigation__link" href="#SetTextI18n"><i class="material-icons warning-icon">warning</i>TextView Internationalization (16)</a>
+      <a class="mdl-navigation__link" href="#HardcodedText"><i class="material-icons warning-icon">warning</i>Hardcoded text (9)</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -205,15 +210,34 @@ document.getElementById(id).style.display = 'none';
 </td></tr>
 <tr>
 <td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#ScopedStorage">ScopedStorage</a>: Affected by scoped storage</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#OldTargetApi">OldTargetApi</a>: Target SDK attribute is not targeting latest version</td></tr>
 <tr>
-<td class="countColumn">3</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#FragmentTagUsage">FragmentTagUsage</a>: Use FragmentContainerView instead of the &lt;fragment> tag</td></tr>
+<tr>
+<td class="countColumn">5</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#GradleDependency">GradleDependency</a>: Obsolete Gradle Dependency</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#MergeRootFrame">MergeRootFrame</a>: FrameLayout can be replaced with <code>&lt;merge></code> tag</td></tr>
 <tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
 </td></tr>
 <tr>
 <td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#MissingApplicationIcon">MissingApplicationIcon</a>: Missing application icon</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Internationalization">Internationalization</a>
+</td></tr>
+<tr>
+<td class="countColumn">16</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#SetTextI18n">SetTextI18n</a>: TextView Internationalization</td></tr>
+<tr>
+<td class="countColumn">9</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#HardcodedText">HardcodedText</a>: Hardcoded text</td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#ExtraIssues">Included Additional Checks (20)</a>
 </td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (39)</a>
@@ -226,7 +250,63 @@ Dismiss</button>            </div>
             </div>
           </section>
 <a name="Correctness"></a>
-<a name="OldTargetApi"></a>
+<a name="ScopedStorage"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="ScopedStorageCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Affected by scoped storage</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:17</span>: <span class="message">WRITE_EXTERNAL_STORAGE is deprecated (and is not granted) when targeting Android 13+. If you need to write to shared storage, use the <code>MediaStore.createWriteRequest</code> intent.</span><br /><pre class="errorlines">
+<span class="lineno"> 14 </span>    <span class="comment">&lt;!-- Network and storage permissions --></span>
+<span class="lineno"> 15 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.INTERNET"</span> />
+<span class="lineno"> 16 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.ACCESS_NETWORK_STATE"</span> />
+<span class="caretline"><span class="lineno"> 17 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"</span><span class="warning"><span class="value">android.permission.WRITE_EXTERNAL_STORAGE</span></span><span class="value">"</span> />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 18 </span>
+<span class="lineno"> 19 </span>    <span class="tag">&lt;application</span><span class="attribute">
+</span><span class="lineno"> 20 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">allowBackup</span>=<span class="value">"true"</span></pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationScopedStorage" style="display: none;">
+Scoped storage is enforced on Android 10+ (or Android 11+ if using <code>requestLegacyExternalStorage</code>). In particular, <code>WRITE_EXTERNAL_STORAGE</code> will no longer provide write access to all files; it will provide the equivalent of <code>READ_EXTERNAL_STORAGE</code> instead.<br/>
+<br/>
+As of Android 13, if you need to query or interact with MediaStore or media files on the shared storage, you should be using instead one or more new storage permissions:<br/>
+* <code>android.permission.READ_MEDIA_IMAGES</code><br/>
+* <code>android.permission.READ_MEDIA_VIDEO</code><br/>
+* <code>android.permission.READ_MEDIA_AUDIO</code><br/>
+<br/>
+and then add <code>maxSdkVersion="33"</code> to the older permission. See the developer guide for how to do this: <a href="https://developer.android.com/about/versions/13/behavior-changes-13#granular-media-permissions">https://developer.android.com/about/versions/13/behavior-changes-13#granular-media-permissions</a><br/>
+<br/>
+The <code>MANAGE_EXTERNAL_STORAGE</code> permission can be used to manage all files, but it is rarely necessary and most apps on Google Play are not allowed to use it. Most apps should instead migrate to use scoped storage. To modify or delete files, apps should request write access from the user as described at <a href="https://goo.gle/android-mediastore-createwriterequest">https://goo.gle/android-mediastore-createwriterequest</a>.<br/>
+<br/>
+To learn more, read these resources: Play policy: <a href="https://goo.gle/policy-storage-help">https://goo.gle/policy-storage-help</a> Allowable use cases: <a href="https://goo.gle/policy-storage-usecases">https://goo.gle/policy-storage-usecases</a><br/><div class="moreinfo">More info: <a href="https://goo.gle/android-storage-usecases">https://goo.gle/android-storage-usecases</a>
+</div>To suppress this error, use the issue id "ScopedStorage" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">ScopedStorage</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 8/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationScopedStorageLink" onclick="reveal('explanationScopedStorage');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="ScopedStorageCardLink" onclick="hideid('ScopedStorageCard');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="OldTargetApi"></a>
 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="OldTargetApiCard" style="display: block;">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
   <div class="mdl-card__title">
@@ -277,6 +357,56 @@ To suppress this error, use the issue id "OldTargetApi" as explained in the <a h
 Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="OldTargetApiCardLink" onclick="hideid('OldTargetApiCard');">
 Dismiss</button>            </div>
             </div>
+          </section><a name="FragmentTagUsage"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="FragmentTagUsageCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Use FragmentContainerView instead of the &lt;fragment> tag</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:6</span>: <span class="message">Replace the &lt;fragment> tag with FragmentContainerView.</span><br /><pre class="errorlines">
+<span class="lineno">  3 </span>    <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"match_parent"</span>
+<span class="lineno">  4 </span>    <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"match_parent"</span>>
+<span class="lineno">  5 </span>
+<span class="caretline"><span class="lineno">  6 </span>    <span class="tag">&lt;</span><span class="warning"><span class="tag">fragment</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
+</span><span class="lineno">  7 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/map"</span>
+<span class="lineno">  8 </span>        <span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"com.google.android.gms.maps.SupportMapFragment"</span>
+<span class="lineno">  9 </span>        <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"match_parent"</span></pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationFragmentTagUsage" style="display: none;">
+FragmentContainerView replaces the &lt;fragment> tag as the preferred                 way of adding fragments via XML. Unlike the &lt;fragment> tag, FragmentContainerView                 uses a normal <code>FragmentTransaction</code> under the hood to add the initial fragment,                 allowing further FragmentTransaction operations on the FragmentContainerView                 and providing a consistent timing for lifecycle events.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/reference/androidx/fragment/app/FragmentContainerView.html">https://developer.android.com/reference/androidx/fragment/app/FragmentContainerView.html</a>
+</div>To suppress this error, use the issue id "FragmentTagUsage" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="vendor">
+Vendor: Android Open Source Project (androidx.fragment.lint.fragment)<br/>
+Identifier: androidx.fragment.lint.fragment<br/>
+Feedback: <a href="https://issuetracker.google.com/issues/new?component=192731">https://issuetracker.google.com/issues/new?component=192731</a><br/>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">FragmentTagUsage</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 5/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationFragmentTagUsageLink" onclick="reveal('explanationFragmentTagUsage');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="FragmentTagUsageCardLink" onclick="hideid('FragmentTagUsageCard');">
+Dismiss</button>            </div>
+            </div>
           </section><a name="GradleDependency"></a>
 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="GradleDependencyCard" style="display: block;">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
@@ -293,8 +423,7 @@ Dismiss</button>            </div>
 <span class="caretline"><span class="lineno"> 34 </span>    implementation <span class="warning"><span class="string">'androidx.core:core-ktx:1.12.0'</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno"> 35 </span>    implementation <span class="string">'androidx.appcompat:appcompat:1.6.1'</span>
 <span class="lineno"> 36 </span>    implementation <span class="string">'com.google.android.material:material:1.11.0'</span>
-<span class="lineno"> 37 </span>}
-</pre>
+<span class="lineno"> 37 </span>    implementation <span class="string">'com.google.android.gms:play-services-maps:18.2.0'</span></pre>
 
 <span class="location"><a href="../../build.gradle">../../build.gradle</a>:35</span>: <span class="message">A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1</span><br /><pre class="errorlines">
 <span class="lineno"> 32 </span>
@@ -302,15 +431,34 @@ Dismiss</button>            </div>
 <span class="lineno"> 34 </span>    implementation <span class="string">'androidx.core:core-ktx:1.12.0'</span>
 <span class="caretline"><span class="lineno"> 35 </span>    implementation <span class="warning"><span class="string">'androidx.appcompat:appcompat:1.6.1'</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno"> 36 </span>    implementation <span class="string">'com.google.android.material:material:1.11.0'</span>
-<span class="lineno"> 37 </span>}
-</pre>
+<span class="lineno"> 37 </span>    implementation <span class="string">'com.google.android.gms:play-services-maps:18.2.0'</span>
+<span class="lineno"> 38 </span>    implementation <span class="string">'com.google.android.gms:play-services-location:21.1.0'</span></pre>
 
 <span class="location"><a href="../../build.gradle">../../build.gradle</a>:36</span>: <span class="message">A newer version of com.google.android.material:material than 1.11.0 is available: 1.13.0</span><br /><pre class="errorlines">
 <span class="lineno"> 33 </span>dependencies {
 <span class="lineno"> 34 </span>    implementation <span class="string">'androidx.core:core-ktx:1.12.0'</span>
 <span class="lineno"> 35 </span>    implementation <span class="string">'androidx.appcompat:appcompat:1.6.1'</span>
 <span class="caretline"><span class="lineno"> 36 </span>    implementation <span class="warning"><span class="string">'com.google.android.material:material:1.11.0'</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 37 </span>}
+<span class="lineno"> 37 </span>    implementation <span class="string">'com.google.android.gms:play-services-maps:18.2.0'</span>
+<span class="lineno"> 38 </span>    implementation <span class="string">'com.google.android.gms:play-services-location:21.1.0'</span>
+<span class="lineno"> 39 </span>}
+</pre>
+
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:37</span>: <span class="message">A newer version of com.google.android.gms:play-services-maps than 18.2.0 is available: 20.0.0</span><br /><pre class="errorlines">
+<span class="lineno"> 34 </span>    implementation <span class="string">'androidx.core:core-ktx:1.12.0'</span>
+<span class="lineno"> 35 </span>    implementation <span class="string">'androidx.appcompat:appcompat:1.6.1'</span>
+<span class="lineno"> 36 </span>    implementation <span class="string">'com.google.android.material:material:1.11.0'</span>
+<span class="caretline"><span class="lineno"> 37 </span>    implementation <span class="warning"><span class="string">'com.google.android.gms:play-services-maps:18.2.0'</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 38 </span>    implementation <span class="string">'com.google.android.gms:play-services-location:21.1.0'</span>
+<span class="lineno"> 39 </span>}
+</pre>
+
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:38</span>: <span class="message">A newer version of com.google.android.gms:play-services-location than 21.1.0 is available: 21.3.0</span><br /><pre class="errorlines">
+<span class="lineno"> 35 </span>    implementation <span class="string">'androidx.appcompat:appcompat:1.6.1'</span>
+<span class="lineno"> 36 </span>    implementation <span class="string">'com.google.android.material:material:1.11.0'</span>
+<span class="lineno"> 37 </span>    implementation <span class="string">'com.google.android.gms:play-services-maps:18.2.0'</span>
+<span class="caretline"><span class="lineno"> 38 </span>    implementation <span class="warning"><span class="string">'com.google.android.gms:play-services-location:21.1.0'</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 39 </span>}
 </pre>
 
 </div>
@@ -341,6 +489,51 @@ Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id
 Dismiss</button>            </div>
             </div>
           </section>
+<a name="Performance"></a>
+<a name="MergeRootFrame"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="MergeRootFrameCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">FrameLayout can be replaced with &lt;merge> tag</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:2</span>: <span class="message">This <code>&lt;FrameLayout></code> can be replaced with a <code>&lt;merge></code> tag</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span><span class="prologue">&lt;?xml version="1.0" encoding="utf-8"?></span>
+<span class="caretline"><span class="lineno">  2 </span><span class="warning"><span class="tag">&lt;FrameLayout</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno">  3 </span>    <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"match_parent"</span>
+<span class="lineno">  4 </span>    <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"match_parent"</span>>
+</pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationMergeRootFrame" style="display: none;">
+If a <code>&lt;FrameLayout></code> is the root of a layout and does not provide background or padding etc, it can often be replaced with a <code>&lt;merge></code> tag which is slightly more efficient. Note that this depends on context, so make sure you understand how the <code>&lt;merge></code> tag works before proceeding.<br/><div class="moreinfo">More info: <a href="https://android-developers.googleblog.com/2009/03/android-layout-tricks-3-optimize-by.html">https://android-developers.googleblog.com/2009/03/android-layout-tricks-3-optimize-by.html</a>
+</div>To suppress this error, use the issue id "MergeRootFrame" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">MergeRootFrame</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Performance</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 4/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationMergeRootFrameLink" onclick="reveal('explanationMergeRootFrame');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="MergeRootFrameCardLink" onclick="hideid('MergeRootFrameCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
 <a name="Usability:Icons"></a>
 <a name="MissingApplicationIcon"></a>
 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="MissingApplicationIconCard" style="display: block;">
@@ -351,14 +544,14 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:4</span>: <span class="message">Should explicitly set <code>android:icon</code>, there is no default</span><br /><pre class="errorlines">
-<span class="lineno">  1 </span><span class="prologue">&lt;?xml version="1.0" encoding="utf-8"?></span>
-<span class="lineno">  2 </span><span class="tag">&lt;manifest</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>>
-<span class="lineno">  3 </span>
-<span class="caretline"><span class="lineno">  4 </span>    <span class="tag">&lt;</span><span class="warning"><span class="tag">application</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
-</span><span class="lineno">  5 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">allowBackup</span>=<span class="value">"true"</span>
-<span class="lineno">  6 </span>        <span class="prefix">android:</span><span class="attribute">label</span>=<span class="value">"@string/app_name"</span>
-<span class="lineno">  7 </span>        <span class="prefix">android:</span><span class="attribute">supportsRtl</span>=<span class="value">"true"</span></pre>
+<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:19</span>: <span class="message">Should explicitly set <code>android:icon</code>, there is no default</span><br /><pre class="errorlines">
+<span class="lineno"> 16 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.ACCESS_NETWORK_STATE"</span> />
+<span class="lineno"> 17 </span>    <span class="tag">&lt;uses-permission</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.permission.WRITE_EXTERNAL_STORAGE"</span> />
+<span class="lineno"> 18 </span>
+<span class="caretline"><span class="lineno"> 19 </span>    <span class="tag">&lt;</span><span class="warning"><span class="tag">application</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
+</span><span class="lineno"> 20 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">allowBackup</span>=<span class="value">"true"</span>
+<span class="lineno"> 21 </span>        <span class="prefix">android:</span><span class="attribute">label</span>=<span class="value">"@string/app_name"</span>
+<span class="lineno"> 22 </span>        <span class="prefix">android:</span><span class="attribute">supportsRtl</span>=<span class="value">"true"</span></pre>
 
 </div>
 <div class="metadata"><div class="explanation" id="explanationMissingApplicationIcon" style="display: none;">
@@ -389,6 +582,340 @@ To suppress this error, use the issue id "MissingApplicationIcon" as explained i
               <div class="mdl-card__actions mdl-card--border">
 <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationMissingApplicationIconLink" onclick="reveal('explanationMissingApplicationIcon');">
 Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="MissingApplicationIconCardLink" onclick="hideid('MissingApplicationIconCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Internationalization"></a>
+<a name="SetTextI18n"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="SetTextI18nCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">TextView Internationalization</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/com/example/basicapp/BleScannerActivity.kt">../../src/main/java/com/example/basicapp/BleScannerActivity.kt</a>:127</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 124 </span>        deviceAddresses.clear()
+<span class="lineno"> 125 </span>        deviceAdapter.notifyDataSetChanged()
+<span class="lineno"> 126 </span>
+<span class="caretline"><span class="lineno"> 127 </span>        statusTextView.text = <span class="string">"</span><span class="warning"><span class="string">Scanning for BLE devices...</span></span><span class="string">"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 128 </span>
+<span class="lineno"> 129 </span>        <span class="keyword">try</span> {
+<span class="lineno"> 130 </span>            bleScanner?.startScan(scanCallback)
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/BleScannerActivity.kt">../../src/main/java/com/example/basicapp/BleScannerActivity.kt</a>:143</span>: <span class="message">Do not concatenate text displayed with <code>setText</code>. Use resource string with placeholders.</span><br /><pre class="errorlines">
+<span class="lineno"> 140 </span>     <span class="keyword">try</span> {
+<span class="lineno"> 141 </span>         bleScanner?.stopScan(scanCallback)
+<span class="lineno"> 142 </span>         isScanning = <span class="keyword">false</span>
+<span class="caretline"><span class="lineno"> 143 </span>         statusTextView.text = <span class="warning"><span class="string">"Scan complete. Found ${</span>deviceList.size<span class="string">} devices."</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 144 </span>     } catch (e: SecurityException) {
+<span class="lineno"> 145 </span>         Toast.makeText(<span class="keyword">this</span>, <span class="string">"Permission error: ${</span>e.message<span class="string">}"</span>, Toast.LENGTH_SHORT).show()
+<span class="lineno"> 146 </span>     }
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/BleScannerActivity.kt">../../src/main/java/com/example/basicapp/BleScannerActivity.kt</a>:143</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 140 </span>     <span class="keyword">try</span> {
+<span class="lineno"> 141 </span>         bleScanner?.stopScan(scanCallback)
+<span class="lineno"> 142 </span>         isScanning = <span class="keyword">false</span>
+<span class="caretline"><span class="lineno"> 143 </span>         statusTextView.text = <span class="string">"</span><span class="warning"><span class="string">Scan complete. Found </span></span><span class="string">${</span>deviceList.size<span class="string">} devices."</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 144 </span>     } catch (e: SecurityException) {
+<span class="lineno"> 145 </span>         Toast.makeText(<span class="keyword">this</span>, <span class="string">"Permission error: ${</span>e.message<span class="string">}"</span>, Toast.LENGTH_SHORT).show()
+<span class="lineno"> 146 </span>     }
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/BleScannerActivity.kt">../../src/main/java/com/example/basicapp/BleScannerActivity.kt</a>:143</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 140 </span>     <span class="keyword">try</span> {
+<span class="lineno"> 141 </span>         bleScanner?.stopScan(scanCallback)
+<span class="lineno"> 142 </span>         isScanning = <span class="keyword">false</span>
+<span class="caretline"><span class="lineno"> 143 </span>         statusTextView.text = <span class="string">"Scan complete. Found ${</span>deviceList.size<span class="string">}</span><span class="warning"><span class="string"> devices.</span></span><span class="string">"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 144 </span>     } catch (e: SecurityException) {
+<span class="lineno"> 145 </span>         Toast.makeText(<span class="keyword">this</span>, <span class="string">"Permission error: ${</span>e.message<span class="string">}"</span>, Toast.LENGTH_SHORT).show()
+<span class="lineno"> 146 </span>     }
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/BleScannerActivity.kt">../../src/main/java/com/example/basicapp/BleScannerActivity.kt</a>:168</span>: <span class="message">Do not concatenate text displayed with <code>setText</code>. Use resource string with placeholders.</span><br /><pre class="errorlines">
+<span class="lineno"> 165 </span>                   runOnUiThread {
+<span class="lineno"> 166 </span>                       deviceList.add(deviceInfo)
+<span class="lineno"> 167 </span>                       deviceAdapter.notifyDataSetChanged()
+<span class="caretline"><span class="lineno"> 168 </span>                       statusTextView.text = <span class="warning"><span class="string">"Found ${</span>deviceList.size<span class="string">} devices..."</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 169 </span>                   }
+<span class="lineno"> 170 </span>               }
+<span class="lineno"> 171 </span>           } catch (e: SecurityException) {
+</pre>
+
+<button class="mdl-button mdl-js-button mdl-button--primary" id="SetTextI18nDivLink" onclick="reveal('SetTextI18nDiv');" />+ 11 More Occurrences...</button>
+<div id="SetTextI18nDiv" style="display: none">
+<span class="location"><a href="../../src/main/java/com/example/basicapp/BleScannerActivity.kt">../../src/main/java/com/example/basicapp/BleScannerActivity.kt</a>:168</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 165 </span>                   runOnUiThread {
+<span class="lineno"> 166 </span>                       deviceList.add(deviceInfo)
+<span class="lineno"> 167 </span>                       deviceAdapter.notifyDataSetChanged()
+<span class="caretline"><span class="lineno"> 168 </span>                       statusTextView.text = <span class="string">"</span><span class="warning"><span class="string">Found </span></span><span class="string">${</span>deviceList.size<span class="string">} devices..."</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 169 </span>                   }
+<span class="lineno"> 170 </span>               }
+<span class="lineno"> 171 </span>           } catch (e: SecurityException) {
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/BleScannerActivity.kt">../../src/main/java/com/example/basicapp/BleScannerActivity.kt</a>:168</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 165 </span>                   runOnUiThread {
+<span class="lineno"> 166 </span>                       deviceList.add(deviceInfo)
+<span class="lineno"> 167 </span>                       deviceAdapter.notifyDataSetChanged()
+<span class="caretline"><span class="lineno"> 168 </span>                       statusTextView.text = <span class="string">"Found ${</span>deviceList.size<span class="string">}</span><span class="warning"><span class="string"> devices...</span></span><span class="string">"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 169 </span>                   }
+<span class="lineno"> 170 </span>               }
+<span class="lineno"> 171 </span>           } catch (e: SecurityException) {
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/BleScannerActivity.kt">../../src/main/java/com/example/basicapp/BleScannerActivity.kt</a>:182</span>: <span class="message">Do not concatenate text displayed with <code>setText</code>. Use resource string with placeholders.</span><br /><pre class="errorlines">
+<span class="lineno"> 179 </span>        override <span class="keyword">fun</span> onScanFailed(errorCode: Int) {
+<span class="lineno"> 180 </span>            <span class="keyword">super</span>.onScanFailed(errorCode)
+<span class="lineno"> 181 </span>            runOnUiThread {
+<span class="caretline"><span class="lineno"> 182 </span>                statusTextView.text = <span class="warning"><span class="string">"Scan failed with error code: $errorCode"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 183 </span>                isScanning = <span class="keyword">false</span>
+<span class="lineno"> 184 </span>            }
+<span class="lineno"> 185 </span>        }
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/BleScannerActivity.kt">../../src/main/java/com/example/basicapp/BleScannerActivity.kt</a>:182</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 179 </span>        override <span class="keyword">fun</span> onScanFailed(errorCode: Int) {
+<span class="lineno"> 180 </span>            <span class="keyword">super</span>.onScanFailed(errorCode)
+<span class="lineno"> 181 </span>            runOnUiThread {
+<span class="caretline"><span class="lineno"> 182 </span>                statusTextView.text = <span class="string">"</span><span class="warning"><span class="string">Scan failed with error code: </span></span><span class="string">$errorCode"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 183 </span>                isScanning = <span class="keyword">false</span>
+<span class="lineno"> 184 </span>            }
+<span class="lineno"> 185 </span>        }
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/MainActivity.kt">../../src/main/java/com/example/basicapp/MainActivity.kt</a>:153</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 150 </span>    }
+<span class="lineno"> 151 </span>
+<span class="lineno"> 152 </span>    private <span class="keyword">fun</span> updateLocationInfo(location: Location) {
+<span class="caretline"><span class="lineno"> 153 </span>        latitudeText.text = <span class="string">"</span><span class="warning"><span class="string">Lat: %.6f</span></span><span class="string">"</span>.format(location.latitude)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 154 </span>        longitudeText.text = <span class="string">"Lng: %.6f"</span>.format(location.longitude)
+<span class="lineno"> 155 </span>
+<span class="lineno"> 156 </span>        <span class="keyword">if</span> (location.hasAltitude()) {
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/MainActivity.kt">../../src/main/java/com/example/basicapp/MainActivity.kt</a>:154</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 151 </span>
+<span class="lineno"> 152 </span>    private <span class="keyword">fun</span> updateLocationInfo(location: Location) {
+<span class="lineno"> 153 </span>        latitudeText.text = <span class="string">"Lat: %.6f"</span>.format(location.latitude)
+<span class="caretline"><span class="lineno"> 154 </span>        longitudeText.text = <span class="string">"</span><span class="warning"><span class="string">Lng: %.6f</span></span><span class="string">"</span>.format(location.longitude)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 155 </span>
+<span class="lineno"> 156 </span>        <span class="keyword">if</span> (location.hasAltitude()) {
+<span class="lineno"> 157 </span>            elevationText.text = <span class="string">"Elevation: %.1f m"</span>.format(location.altitude)
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/MainActivity.kt">../../src/main/java/com/example/basicapp/MainActivity.kt</a>:157</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 154 </span>        longitudeText.text = <span class="string">"Lng: %.6f"</span>.format(location.longitude)
+<span class="lineno"> 155 </span>
+<span class="lineno"> 156 </span>        <span class="keyword">if</span> (location.hasAltitude()) {
+<span class="caretline"><span class="lineno"> 157 </span>            elevationText.text = <span class="string">"</span><span class="warning"><span class="string">Elevation: %.1f m</span></span><span class="string">"</span>.format(location.altitude)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 158 </span>        } <span class="keyword">else</span> {
+<span class="lineno"> 159 </span>            elevationText.text = <span class="string">"Elevation: N/A"</span>
+<span class="lineno"> 160 </span>        }
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/MainActivity.kt">../../src/main/java/com/example/basicapp/MainActivity.kt</a>:159</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 156 </span>        <span class="keyword">if</span> (location.hasAltitude()) {
+<span class="lineno"> 157 </span>            elevationText.text = <span class="string">"Elevation: %.1f m"</span>.format(location.altitude)
+<span class="lineno"> 158 </span>        } <span class="keyword">else</span> {
+<span class="caretline"><span class="lineno"> 159 </span>            elevationText.text = <span class="string">"</span><span class="warning"><span class="string">Elevation: N/A</span></span><span class="string">"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 160 </span>        }
+<span class="lineno"> 161 </span>    }
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/MainActivity.kt">../../src/main/java/com/example/basicapp/MainActivity.kt</a>:182</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 179 </span>    override <span class="keyword">fun</span> onSensorChanged(event: SensorEvent?) {
+<span class="lineno"> 180 </span>        event?.let {
+<span class="lineno"> 181 </span>            <span class="keyword">if</span> (it.sensor.type == Sensor.TYPE_ACCELEROMETER) {
+<span class="caretline"><span class="lineno"> 182 </span>                accelXText.text = <span class="string">"</span><span class="warning"><span class="string">Accel X: %.2f m/s²</span></span><span class="string">"</span>.format(it.values[<span class="number">0</span>])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 183 </span>                accelYText.text = <span class="string">"Accel Y: %.2f m/s²"</span>.format(it.values[<span class="number">1</span>])
+<span class="lineno"> 184 </span>                accelZText.text = <span class="string">"Accel Z: %.2f m/s²"</span>.format(it.values[<span class="number">2</span>])
+<span class="lineno"> 185 </span>            }
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/MainActivity.kt">../../src/main/java/com/example/basicapp/MainActivity.kt</a>:183</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 180 </span>        event?.let {
+<span class="lineno"> 181 </span>            <span class="keyword">if</span> (it.sensor.type == Sensor.TYPE_ACCELEROMETER) {
+<span class="lineno"> 182 </span>                accelXText.text = <span class="string">"Accel X: %.2f m/s²"</span>.format(it.values[<span class="number">0</span>])
+<span class="caretline"><span class="lineno"> 183 </span>                accelYText.text = <span class="string">"</span><span class="warning"><span class="string">Accel Y: %.2f m/s²</span></span><span class="string">"</span>.format(it.values[<span class="number">1</span>])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 184 </span>                accelZText.text = <span class="string">"Accel Z: %.2f m/s²"</span>.format(it.values[<span class="number">2</span>])
+<span class="lineno"> 185 </span>            }
+<span class="lineno"> 186 </span>        }
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/basicapp/MainActivity.kt">../../src/main/java/com/example/basicapp/MainActivity.kt</a>:184</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 181 </span>            <span class="keyword">if</span> (it.sensor.type == Sensor.TYPE_ACCELEROMETER) {
+<span class="lineno"> 182 </span>                accelXText.text = <span class="string">"Accel X: %.2f m/s²"</span>.format(it.values[<span class="number">0</span>])
+<span class="lineno"> 183 </span>                accelYText.text = <span class="string">"Accel Y: %.2f m/s²"</span>.format(it.values[<span class="number">1</span>])
+<span class="caretline"><span class="lineno"> 184 </span>                accelZText.text = <span class="string">"</span><span class="warning"><span class="string">Accel Z: %.2f m/s²</span></span><span class="string">"</span>.format(it.values[<span class="number">2</span>])&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 185 </span>            }
+<span class="lineno"> 186 </span>        }
+<span class="lineno"> 187 </span>    }
+</pre>
+
+</div>
+</div>
+<div class="metadata"><div class="explanation" id="explanationSetTextI18n" style="display: none;">
+When calling <code>TextView#setText</code><br/>
+* Never call <code>Number#toString()</code> to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using <code>String#format</code> with proper format specifications (<code>%d</code> or <code>%f</code>) instead.<br/>
+* Do not pass a string literal (e.g. "Hello") to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.<br/>
+* Do not build messages by concatenating text chunks. Such messages can not be properly translated.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/guide/topics/resources/localization.html">https://developer.android.com/guide/topics/resources/localization.html</a>
+</div>To suppress this error, use the issue id "SetTextI18n" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">SetTextI18n</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Internationalization</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 6/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationSetTextI18nLink" onclick="reveal('explanationSetTextI18n');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="SetTextI18nCardLink" onclick="hideid('SetTextI18nCard');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="HardcodedText"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="HardcodedTextCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Hardcoded text</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/layout/activity_ble_scanner.xml">../../src/main/res/layout/activity_ble_scanner.xml</a>:12</span>: <span class="message">Hardcoded string "Scanning for BLE devices...", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  9 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/statusTextView"</span>
+<span class="lineno"> 10 </span>        <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"match_parent"</span>
+<span class="lineno"> 11 </span>        <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="caretline"><span class="lineno"> 12 </span>        <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Scanning for BLE devices..."</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 13 </span>        <span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"16sp"</span>
+<span class="lineno"> 14 </span>        <span class="prefix">android:</span><span class="attribute">paddingBottom</span>=<span class="value">"8dp"</span> />
+</pre>
+
+<span class="location"><a href="../../src/main/res/layout/debug_panel.xml">../../src/main/res/layout/debug_panel.xml</a>:20</span>: <span class="message">Hardcoded string "Debug Info", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 17 </span>        <span class="tag">&lt;TextView</span><span class="attribute">
+</span><span class="lineno"> 18 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 19 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="caretline"><span class="lineno"> 20 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Debug Info"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 21 </span>            <span class="prefix">android:</span><span class="attribute">textColor</span>=<span class="value">"#FFFFFF"</span>
+<span class="lineno"> 22 </span>            <span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"16sp"</span>
+<span class="lineno"> 23 </span>            <span class="prefix">android:</span><span class="attribute">textStyle</span>=<span class="value">"bold"</span></pre>
+
+<span class="location"><a href="../../src/main/res/layout/debug_panel.xml">../../src/main/res/layout/debug_panel.xml</a>:30</span>: <span class="message">Hardcoded string "Lat: --", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 27 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/latitudeText"</span>
+<span class="lineno"> 28 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 29 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="caretline"><span class="lineno"> 30 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Lat: --"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 31 </span>            <span class="prefix">android:</span><span class="attribute">textColor</span>=<span class="value">"#FFFFFF"</span>
+<span class="lineno"> 32 </span>            <span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"12sp"</span>
+<span class="lineno"> 33 </span>            <span class="prefix">android:</span><span class="attribute">fontFamily</span>=<span class="value">"monospace"</span> />
+</pre>
+
+<span class="location"><a href="../../src/main/res/layout/debug_panel.xml">../../src/main/res/layout/debug_panel.xml</a>:39</span>: <span class="message">Hardcoded string "Lng: --", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 36 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/longitudeText"</span>
+<span class="lineno"> 37 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 38 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="caretline"><span class="lineno"> 39 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Lng: --"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 40 </span>            <span class="prefix">android:</span><span class="attribute">textColor</span>=<span class="value">"#FFFFFF"</span>
+<span class="lineno"> 41 </span>            <span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"12sp"</span>
+<span class="lineno"> 42 </span>            <span class="prefix">android:</span><span class="attribute">fontFamily</span>=<span class="value">"monospace"</span> />
+</pre>
+
+<span class="location"><a href="../../src/main/res/layout/debug_panel.xml">../../src/main/res/layout/debug_panel.xml</a>:48</span>: <span class="message">Hardcoded string "Elevation: --", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 45 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/elevationText"</span>
+<span class="lineno"> 46 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 47 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="caretline"><span class="lineno"> 48 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Elevation: --"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 49 </span>            <span class="prefix">android:</span><span class="attribute">textColor</span>=<span class="value">"#FFFFFF"</span>
+<span class="lineno"> 50 </span>            <span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"12sp"</span>
+<span class="lineno"> 51 </span>            <span class="prefix">android:</span><span class="attribute">fontFamily</span>=<span class="value">"monospace"</span> />
+</pre>
+
+<button class="mdl-button mdl-js-button mdl-button--primary" id="HardcodedTextDivLink" onclick="reveal('HardcodedTextDiv');" />+ 4 More Occurrences...</button>
+<div id="HardcodedTextDiv" style="display: none">
+<span class="location"><a href="../../src/main/res/layout/debug_panel.xml">../../src/main/res/layout/debug_panel.xml</a>:64</span>: <span class="message">Hardcoded string "Accel X: --", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 61 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/accelXText"</span>
+<span class="lineno"> 62 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 63 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="caretline"><span class="lineno"> 64 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Accel X: --"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 65 </span>            <span class="prefix">android:</span><span class="attribute">textColor</span>=<span class="value">"#FFFFFF"</span>
+<span class="lineno"> 66 </span>            <span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"12sp"</span>
+<span class="lineno"> 67 </span>            <span class="prefix">android:</span><span class="attribute">fontFamily</span>=<span class="value">"monospace"</span> />
+</pre>
+
+<span class="location"><a href="../../src/main/res/layout/debug_panel.xml">../../src/main/res/layout/debug_panel.xml</a>:73</span>: <span class="message">Hardcoded string "Accel Y: --", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 70 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/accelYText"</span>
+<span class="lineno"> 71 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 72 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="caretline"><span class="lineno"> 73 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Accel Y: --"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 74 </span>            <span class="prefix">android:</span><span class="attribute">textColor</span>=<span class="value">"#FFFFFF"</span>
+<span class="lineno"> 75 </span>            <span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"12sp"</span>
+<span class="lineno"> 76 </span>            <span class="prefix">android:</span><span class="attribute">fontFamily</span>=<span class="value">"monospace"</span> />
+</pre>
+
+<span class="location"><a href="../../src/main/res/layout/debug_panel.xml">../../src/main/res/layout/debug_panel.xml</a>:82</span>: <span class="message">Hardcoded string "Accel Z: --", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 79 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/accelZText"</span>
+<span class="lineno"> 80 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
+<span class="lineno"> 81 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
+<span class="caretline"><span class="lineno"> 82 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Accel Z: --"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 83 </span>            <span class="prefix">android:</span><span class="attribute">textColor</span>=<span class="value">"#FFFFFF"</span>
+<span class="lineno"> 84 </span>            <span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"12sp"</span>
+<span class="lineno"> 85 </span>            <span class="prefix">android:</span><span class="attribute">fontFamily</span>=<span class="value">"monospace"</span> />
+</pre>
+
+<span class="location"><a href="../../src/main/res/menu/main_menu.xml">../../src/main/res/menu/main_menu.xml</a>:6</span>: <span class="message">Hardcoded string "BLE Scanner", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 3 </span>    <span class="prefix">xmlns:</span><span class="attribute">app</span>=<span class="value">"http://schemas.android.com/apk/res-auto"</span>>
+<span class="lineno"> 4 </span>    <span class="tag">&lt;item</span><span class="attribute">
+</span><span class="lineno"> 5 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/action_ble_scanner"</span>
+<span class="caretline"><span class="lineno"> 6 </span>        <span class="warning"><span class="prefix">android:</span><span class="attribute">title</span>=<span class="value">"BLE Scanner"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 7 </span>        <span class="prefix">app:</span><span class="attribute">showAsAction</span>=<span class="value">"never"</span> />
+<span class="lineno"> 8 </span><span class="tag">&lt;/menu></span>
+</pre>
+
+</div>
+</div>
+<div class="metadata"><div class="explanation" id="explanationHardcodedText" style="display: none;">
+Hardcoding text attributes directly in layout files is bad for several reasons:<br/>
+<br/>
+* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)<br/>
+<br/>
+* The application cannot be translated to other languages by just adding new translations for existing string resources.<br/>
+<br/>
+There are quickfixes to automatically extract this hardcoded string into a resource lookup.<br/>To suppress this error, use the issue id "HardcodedText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">HardcodedText</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Internationalization</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 5/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationHardcodedTextLink" onclick="reveal('explanationHardcodedText');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="HardcodedTextCardLink" onclick="hideid('HardcodedTextCard');">
 Dismiss</button>            </div>
             </div>
           </section>

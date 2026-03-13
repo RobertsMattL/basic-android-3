@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.basicapp-mergeReleaseResources-29:/values-v31/values-v31.xml",
+            "outputFile": "com.example.basicapp-mergeReleaseResources-32:/values-v31/values-v31.xml",
             "map": [
                 {
                     "source": "/Users/matthewroberts/.gradle/caches/9.4.0/transforms/e7a86a8b361b22be7ab5311366a65952/transformed/material-1.11.0/res/values-v31/values-v31.xml",

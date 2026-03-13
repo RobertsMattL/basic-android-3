@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     <!-- BLE permissions -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -13,17 +11,11 @@
 
     <uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />
 
-=======
+    <!-- Network and storage permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-=======
->>>>>>> e7c8a70ec75100ed7489aca4a06e999f7296ef0a
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
->>>>>>> 5aa7bc9d338dbb01c46c97bb8036b2e51dc00ea5
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
